@@ -9,10 +9,11 @@ class Menu {
       </div>
     );
   }
-}
+};
 
 class CustomerService {
   customers = [];
+
   getCustomers() {
     // Comment out below to load customers every time
     if (this.customers.length != 0) {
@@ -48,7 +49,8 @@ class CustomerService {
       return response;
     });
   }
-}
+};
+
 var customerService = new CustomerService();
 var status = "";
 
@@ -91,7 +93,7 @@ class CustomerList {
       status = "error: " + reason;
     });
   }
-}
+};
 
 class App {
   view() {
